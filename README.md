@@ -1,12 +1,12 @@
-#VBA of Wall Street
+# VBA of Wall Street
 
-##Overview of Project
+## Overview of Project
 
 Steve reached out with the goal of analyzing stock data to help build an investment portfolio for his parents. His parents want to invest in a green energy company named DAQO New Energy Corp. Steve wants to diversify for the portfolio to include other green energy companies. With a provided list of stock data for the years of 2017 and 2018 tabulated by ticker id, analysis was performed to determine which stocks Steve should include in the portfolio.
 
-##Results
+## Results
 
-###Nested For Loop Analysis
+### Nested For Loop Analysis
 The original analysis of the stocks utilized an array of ticker ids of specific companies to compile the yearly data for each company in the array and display the company's performance. This was done by iterating the array index with a for loop, then using a nested for loop to search the data for the applicable data. An example of the code is below.
 
     ```
@@ -58,7 +58,7 @@ In order to determine how optimal this script is, a timer was initiated in the s
 ![VBA_Challenge_2017_Original.png](https://github.com/mcwatts88/stock-analysis/blob/main/Resources/VBA_Challenge_2017_Original.png)
 ![VBA_Challenge_2018_Original.png](https://github.com/mcwatts88/stock-analysis/blob/main/Resources/VBA_Challenge_2018_Original.png)
 
-###Refactored For Loop Analysis
+### Refactored For Loop Analysis
 
 The above code was refactored to iterate a variable called tickerIndex in order to build output arrays. This allowed the loop to only have to excecute to completion a single time. An example of the refactored code is below
 
@@ -135,13 +135,13 @@ Not having to perform the loop multiple times allowed the script to complete muc
 ![VBA_Challenge_2017.png](https://github.com/mcwatts88/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
 ![VBA_Challenge_2018.png](https://github.com/mcwatts88/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
-##Summary
+## Summary
 
-###Refactoring in General
+### Refactoring in General
     
 Refactoring code can be advantageous in that it optimzes your code to run more efficiently. It can also be used to add features that were previously not included. The downside to this is that it takes time and money. The refactoring may only provide a marginal increase in optimization but may take quite a while to execute.
 
-###Refactoring This Script
+### Refactoring This Script
 
 This script was refactored to lower the time it takes to run the analysis. This increase in efficiency gained us over a half second in processing time. This lowers the resources used by the script and and runs quicker which is very advantageous. The use of arrays simplifies the code so that it isnt necessary to keep track of nested loops. There are little downsides to this refactoring, as the only significant change is iterating the index inside of an existing for loop instead of using a separate for loop.
 
